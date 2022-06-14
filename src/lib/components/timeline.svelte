@@ -9,6 +9,7 @@
 
 <div class="container">
     <!-- Left vertical line -->
+    <div class="container__line"></div>
     
     <!-- The timeline items container -->
     <ul class="container__items">
@@ -19,7 +20,6 @@
         <li class="container__item">
             <!-- The circle and title -->
             <div class="container__top">
-                        <div class="container__line"></div>
                         <!-- The circle -->
                         <div class="container__circle"></div>
                         <!-- The title -->
@@ -48,7 +48,6 @@
         margin-top: 20px;
         /* overflow: auto; */
 
-        height: 40%;
     }
 
     /* .container::-webkit-scrollbar{
@@ -149,9 +148,8 @@
     @media (max-width: 700px) {
         .container {
             /* Used to position the left vertical line */
-            /* max-width: fit-content; */
+            max-width: fit-content;
 
-            height: 65vh;
         }
         .container__title {
             flex: 5;

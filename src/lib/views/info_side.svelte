@@ -39,13 +39,13 @@ import ListYear from "../components/list_year.svelte";
         }
 
         .name {
-            font-size: 23pt;
+            font-size: 27pt;
             text-align: center;
             
         }
         
         .article {
-            font-size: 12pt;
+            font-size: 15pt;
             text-align: center;
         }
     }
