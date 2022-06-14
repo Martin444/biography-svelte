@@ -21,7 +21,7 @@
             object-fit: cover;
             border-radius: 15%;
             margin: 0;
-            z-index: 1;
+            z-index: 9999;
         }
     }
     </style>

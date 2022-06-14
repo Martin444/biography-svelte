@@ -10,7 +10,7 @@
         height: 500px;
         border-radius: 25% 75% 79% 21% / 30% 21% 79% 70% ;
         background-color: #DBBB46;
-        z-index: 0;
+        z-index: -1;
     }
 
     @media(max-width: 700px) {

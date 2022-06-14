@@ -20,7 +20,9 @@
   main::-webkit-scrollbar{
     width: 0px;
     overflow: auto;
-    background: transparent;
+    /* background: transparent; */
+    background-color: #3C6F8E;
+
   }
   
   main {

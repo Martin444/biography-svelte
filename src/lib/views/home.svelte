@@ -20,14 +20,16 @@ import InfoSide from './info_side.svelte';
         /* height: 100vh; */
         padding: 0;
         margin: 0;
-        background-color: #3C6F8E;
+        z-index: 1;
     }
 
     @media(max-width: 700px) {
         section {
+            display: block;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
     }
 </style>
