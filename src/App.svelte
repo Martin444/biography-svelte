@@ -14,12 +14,12 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell,   'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #3C6F8E;
-    overflow: hidden;
+    overflow: auto;
   }
 
   main::-webkit-scrollbar{
     width: 0px;
-    overflow: hidden;
+    overflow: auto;
     background: transparent;
   }
   
@@ -28,23 +28,9 @@
     padding: 20px;
     margin: 0;
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-y: hidden; 
   }
 
-    
 
-
-
-  /* @media (min-width: 480px) {
-    h1 {
-      max-width: none;
-    }
-
-    p {
-      max-width: none;
-    }
-  } */
 </style>

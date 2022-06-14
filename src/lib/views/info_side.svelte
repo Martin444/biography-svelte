@@ -16,8 +16,8 @@ import ListYear from "../components/list_year.svelte";
         display: flex;
         flex-direction: column;
         
-        align-items: flex-start;
-        justify-content: start;
+        /* align-items: flex-start; */
+        /* justify-content: start; */
         margin: 20px 0 0px 0;
         background-color: #3C6F8E;
     }
@@ -35,5 +35,24 @@ import ListYear from "../components/list_year.svelte";
         color: #fff;
         font-family: 'Open sans', sans-serif;
         font-weight: 300;
+    }
+
+    @media(max-width: 700px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .name {
+            font-size: 23pt;
+            text-align: center;
+            
+        }
+        
+        .article {
+            font-size: 12pt;
+            text-align: center;
+        }
     }
 </style>

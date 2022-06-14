@@ -8,7 +8,6 @@ import InfoSide from './info_side.svelte';
 <section>
     <Profile/>
     <InfoSide/>
-       
 </section>
 
 
@@ -17,11 +16,18 @@ import InfoSide from './info_side.svelte';
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: space-between;
-        height: 100vh;
+        justify-content: center;
+        /* height: 100vh; */
         padding: 0;
         margin: 0;
         background-color: #3C6F8E;
-        overflow: none;
+    }
+
+    @media(max-width: 700px) {
+        section {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 </style>

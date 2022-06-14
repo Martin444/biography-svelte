@@ -50,4 +50,13 @@
         padding: 0;
     }
 
+    @media(max-width: 700px) {
+  
+        .list ul {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
 </style>
