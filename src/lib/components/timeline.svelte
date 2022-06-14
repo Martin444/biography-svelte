@@ -157,7 +157,7 @@
             /* Used to position the left vertical line */
             /* max-width: fit-content; */
 
-            height: 35vh;
+            height: 65vh;
         }
         .container__title {
             flex: 5;
