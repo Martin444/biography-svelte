@@ -1,31 +1,25 @@
 <script>
-
     import data from '../../assets/manuel.json';
     export let yearSelected = data['data'][0]['year'];
 
     $: info = data['data'].filter(function(item) {
         return item['year'] == yearSelected;
     });
-
-
-
-
-
 </script>
 
 <div class="container">
     <!-- Left vertical line -->
-    <div class="container__line"></div>
-
+    
     <!-- The timeline items container -->
     <ul class="container__items">
-
+        
         <!-- Each timeline item -->
         {#each info as moreInfo}   
-            {#each moreInfo['info'] as detail} 
-                <li class="container__item">
-                    <!-- The circle and title -->
-                    <div class="container__top">
+        {#each moreInfo['info'] as detail} 
+        <li class="container__item">
+            <!-- The circle and title -->
+            <div class="container__top">
+                        <div class="container__line"></div>
                         <!-- The circle -->
                         <div class="container__circle"></div>
                         <!-- The title -->
