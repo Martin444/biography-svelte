@@ -16,7 +16,6 @@ import ListYear from "../components/list_year.svelte";
         display: flex;
         flex-direction: column;
         margin: 20px 0 0px 0;
-        background-color: #3C6F8E;
         z-index: 1;
     }
     .name {
