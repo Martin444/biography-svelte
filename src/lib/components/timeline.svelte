@@ -52,7 +52,7 @@
         position: relative;
         /* max-width: fit-content; */
         margin-top: 20px;
-        overflow: auto;
+        /* overflow: auto; */
 
         height: 40%;
     }
