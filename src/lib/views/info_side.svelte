@@ -15,13 +15,10 @@ import ListYear from "../components/list_year.svelte";
     .container {
         display: flex;
         flex-direction: column;
-        
-        /* align-items: flex-start; */
-        /* justify-content: start; */
         margin: 20px 0 0px 0;
         background-color: #3C6F8E;
+        z-index: 1;
     }
-
     .name {
         font-size: 54pt;
         color: #fff;
@@ -29,14 +26,12 @@ import ListYear from "../components/list_year.svelte";
         margin: 0;
         font-weight: 500;
     }
-
     .article {
         font-size: 20pt;
         color: #fff;
         font-family: 'Open sans', sans-serif;
         font-weight: 300;
     }
-
     @media(max-width: 700px) {
         .container {
             flex-direction: column;
