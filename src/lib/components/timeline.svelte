@@ -16,10 +16,10 @@
         
         <!-- Each timeline item -->
         {#each info as moreInfo}   
-        {#each moreInfo['info'] as detail} 
-        <li class="container__item">
+            {#each moreInfo['info'] as detail} 
+                <li class="container__item">
             <!-- The circle and title -->
-            <div class="container__top">
+                    <div class="container__top">
                         <!-- The circle -->
                         <div class="container__circle"></div>
                         <!-- The title -->
@@ -131,14 +131,14 @@
         margin-bottom: 10px;
     }
 
-    /* .detail-title {
+    .detail-title {
         font-size: 10pt;
         font-weight: 200;
         font-family: 'Open sans', sans-serif;
         font-style: italic;
         margin-top: 10px;
         margin-bottom: 10px;
-    } */
+    }
 
     .container-imagedetail {
         flex: 3;
@@ -169,9 +169,14 @@
             flex: 3;
             font-family: 'Open sans', sans-serif;
             color: #fff;
-            font-size: 12pt;
-            font-weight: 200;
+            font-size: 14pt;
+            font-weight: 600;
             border-radius: 20px;
+        }
+
+        .container-imagedetail {
+            flex: 3;
+            margin-left: 0px;
         }
     }
 

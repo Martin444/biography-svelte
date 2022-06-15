@@ -4,9 +4,9 @@
 
 <style>
     .booble {
-        position: absolute;
-        top: 3em;
-        left: -10em;
+        position: fixed;
+        top: 30em;
+        left: 10em;
         height: 500px;
         border-radius: 25% 75% 79% 21% / 30% 21% 79% 70% ;
         background-color: #DBBB46;
