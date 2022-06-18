@@ -11,9 +11,9 @@
 
 <style>
     section {
-        display: block;
+        display: flex;
         flex-direction: row;
-        align-items: flex-end;
+        align-items: flex-start;
         justify-content: center;
         height: 100vh;
         padding: 0;
