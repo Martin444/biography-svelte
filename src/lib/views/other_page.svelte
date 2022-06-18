@@ -7,6 +7,7 @@
 </script>
 
 <div class="container-manuelito">
+    <h1 class="title">BELGERANISMO</h1>
     <div class="bubble-container">
         <div class="bubble b r hb">
                 <p class="messagito">
@@ -24,6 +25,16 @@
 </div>
 
 <style>
+
+    .title {
+        position: absolute;
+        font-size: 3em;
+        top: 0px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 20px;
+        z-index: 1;
+    }
     .messagito {
         padding: 10px;
         display: block;
