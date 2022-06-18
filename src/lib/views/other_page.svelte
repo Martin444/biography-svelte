@@ -1,6 +1,7 @@
 <script>
     import { link } from 'svelte-routing';
     import ButtonPrimary from '../components/button_primary.svelte';
+    import ManuelitoImg from '../../assets/manuelito.jpg';
 
     let messageManuelito = `Hola joven patriota`;
 </script>
@@ -11,10 +12,9 @@
                 <p class="messagito">
                     {messageManuelito}
                 </p>
-                
         </div>
     </div>
-    <img src="/src/assets/manuelito.jpg" alt="manuelito" class="manuel-img"/>
+    <img src={ManuelitoImg} alt="manuelito" class="manuel-img"/>
     <p class="item-desc">
         Demos un paseo por la historia.
     </p>
