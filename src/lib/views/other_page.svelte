@@ -164,7 +164,7 @@
         font-family: monospace;
         white-space: nowrap;
         text-align: center;
-        font-size: 3vmin;
+        font-size: 4vmin;
         margin: 0;
         width: 30ch;
         animation: typing 2s steps(40), blink .5s infinite step-end alternate;
