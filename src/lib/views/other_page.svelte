@@ -24,7 +24,6 @@
 </div>
 
 <style>
-    
     .messagito {
         padding: 10px;
         display: block;

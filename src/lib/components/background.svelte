@@ -7,7 +7,7 @@
         position: fixed;
         top: 10em;
         left: 10em;
-        height: 500px;
+        height: 300px;
         border-radius: 25% 75% 79% 21% / 30% 21% 79% 70% ;
         background-color: #DBBB46;
         z-index: -1;
