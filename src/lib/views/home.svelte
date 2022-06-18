@@ -1,8 +1,6 @@
 <script>
-
-import Profile from '../components/profile.svelte';
-import InfoSide from './info_side.svelte';
-
+    import Profile from '../components/profile.svelte';
+    import InfoSide from './info_side.svelte';
 </script>
 
 <section>
@@ -13,13 +11,13 @@ import InfoSide from './info_side.svelte';
 
 <style>
     section {
-        display: flex;
+        display: block;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: flex-end;
         justify-content: center;
-        /* height: 100vh; */
+        height: 100vh;
         padding: 0;
-        margin: 0;
+        margin-top: 90px;
         z-index: 1;
     }
 

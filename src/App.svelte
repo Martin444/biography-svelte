@@ -1,15 +1,21 @@
 <script>
   import Background from './lib/components/background.svelte';
   import Home from './lib/views/home.svelte';
+  import { Router, Route } from 'svelte-routing';
+import OtherPage from './lib/views/other_page.svelte';
 </script>
 
 <main>
-  <Home/>
-  <Background></Background>
+  <Router>
+    <Route path='/' component="{OtherPage}"/>
+    <Route path='/manuel' component="{Home}"/>
+    <Background></Background>
+  </Router>
 </main>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  
   :root {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell,   'Open Sans', 'Helvetica Neue', sans-serif;
@@ -22,15 +28,15 @@
     overflow: auto;
     /* background: transparent; */
     background-color: #3C6F8E;
-
   }
   
   main {
-    height: 100vh;
     padding: 20px;
     margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: calc(100vh - 40px);
     flex-direction: row;
   }
 

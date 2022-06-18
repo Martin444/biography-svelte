@@ -18,7 +18,8 @@
 
 </script>
 
-<div class="list">
+<div class="list"> 
+    <!-- TODO: Implementar una lista de años -->
     <ul transition:fade='{{ duration: 300}}'>
         {#each data['data'] as moor (moor['id'])}
             <YearTile year={moor['year']} on:onselect={handleSelect} select={yearIsSelect == moor['year']}></YearTile>

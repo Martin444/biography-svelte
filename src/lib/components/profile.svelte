@@ -6,7 +6,8 @@
 
 <style>
     .manuel {
-        width: 25em;
+        width: 13em;
+        object-fit: cover;
         height: 15em;
         margin: 30px;
         border-radius: 20px;
