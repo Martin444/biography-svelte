@@ -154,11 +154,11 @@
             font-family: 'Open sans', sans-serif;
             color: #fff;
             font-size: 14pt;
-            font-weight: 600;
+            font-weight: 200;
             border-radius: 20px;
         }
         .container-imagedetail {
-            flex: 3;
+            flex: 1;
             margin-left: 0px;
         }
     }

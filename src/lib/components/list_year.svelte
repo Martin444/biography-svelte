@@ -1,11 +1,13 @@
 <script>
     import {fade} from 'svelte/transition';
+    import { elasticOut } from 'svelte/easing';
     import data from '../../assets/manuel.json';
     import Timeline from './timeline.svelte';
     import YearTile from './year_tile.svelte';
     import { yearSelected } from '../store/store.js';
      
     let yearIsSelect = data['data'][0]['year'];
+    let y;
 
     function handleSelect(event) {
         yearSelected.update(n =>  n  = event.detail.year);
@@ -20,17 +22,38 @@
 
 <div class="list"> 
     <!-- TODO: Implementar una lista de años -->
-    <ul transition:fade='{{ duration: 500}}'>
+    {#if y > 300}
+    <ul class="sticked">
         {#each data['data'] as moor (moor['id'])}
             <YearTile year={moor['year']} on:onselect={handleSelect} select={yearIsSelect == moor['year']} ></YearTile>
         {/each}
     </ul>
 
+    {:else}
+    <ul transition:fade='{{ duration: 500, easing: elasticOut}}'>
+        {#each data['data'] as moor (moor['id'])}
+            <YearTile year={moor['year']} on:onselect={handleSelect} select={yearIsSelect == moor['year']} ></YearTile>
+        {/each}
+    </ul>
+    {/if}
+
     <Timeline  yearSelected={yearIsSelect}/>
 
 </div>
 
+<svelte:window bind:scrollY={y} />
+
 <style>
+
+    .sticked{
+        width: fit-content;
+        position: sticky;
+        padding: 10px;
+        z-index: 1;
+        top: 0pc;
+        background-color: #3C6F8E;
+        right: 0;
+    }
     .list {
         width: 100%;
         display: flex;
