@@ -8,7 +8,6 @@
     <InfoSide/>
 </section>
 
-
 <style>
     section {
         display: flex;

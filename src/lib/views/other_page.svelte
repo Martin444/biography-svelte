@@ -29,7 +29,7 @@
     .title {
         position: absolute;
         font-size: 3em;
-        top: 10%;
+        top: 1%;
         font-weight: bold;
         color: #fff;
         margin-bottom: 20px;

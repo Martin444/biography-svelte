@@ -20,9 +20,9 @@
 
 <div class="list"> 
     <!-- TODO: Implementar una lista de años -->
-    <ul transition:fade='{{ duration: 300}}'>
+    <ul transition:fade='{{ duration: 500}}'>
         {#each data['data'] as moor (moor['id'])}
-            <YearTile year={moor['year']} on:onselect={handleSelect} select={yearIsSelect == moor['year']}></YearTile>
+            <YearTile year={moor['year']} on:onselect={handleSelect} select={yearIsSelect == moor['year']} ></YearTile>
         {/each}
     </ul>
 
@@ -52,11 +52,15 @@
     }
 
     @media(max-width: 700px) {
-  
-        .list ul {
+
+        .list {
             flex-direction: row;
-            align-items: center;
             justify-content: center;
+        }
+        .list ul {
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
         }
     }
 

@@ -52,7 +52,7 @@ import { createEventDispatcher } from "svelte";
     }
 
     .tile span {
-        font-size: 18pt;
+        font-size: 1em;
         color: #fff;
         font-family: 'Open Sans', sans-serif;
         margin: 0;
@@ -60,7 +60,7 @@ import { createEventDispatcher } from "svelte";
     }
 
     .tile-select span {
-        font-size: 18pt;
+        font-size: 1em;
         color: #fff;
         font-family: 'Open Sans', sans-serif;
         margin: 0;

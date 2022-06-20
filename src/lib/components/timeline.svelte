@@ -116,7 +116,7 @@
     }
 
     .detail-title {
-        font-size: 10pt;
+        font-size: 14pt;
         font-weight: 200;
         font-family: 'Open sans', sans-serif;
         font-style: italic;
@@ -126,13 +126,13 @@
 
     .container-imagedetail {
         flex: 3;
+        width: 50%;
         margin-left: 20px;
     }
     @media (max-width: 700px) {
         .container {
             /* Used to position the left vertical line */
-            max-width: fit-content;
-
+            max-width: 80%;
         }
         .container__title {
             flex: 5;
