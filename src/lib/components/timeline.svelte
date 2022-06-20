@@ -1,5 +1,6 @@
 <script>
     import data from '../../assets/manuel.json';
+    import {fade} from 'svelte/transition';
     export let yearSelected = data['data'][0]['year'];
 
     $: info = data['data'].filter(function(item) {
@@ -17,7 +18,7 @@
         <!-- Each timeline item -->
         {#each info as moreInfo}   
             {#each moreInfo['info'] as detail} 
-                <li class="container__item">
+                <li class="container__item" transition:fade='{{ duration: 1000}}'>
             <!-- The circle and title -->
                     <div class="container__top">
                         <!-- The circle -->
