@@ -76,6 +76,16 @@
 
     @media(max-width: 700px) {
 
+        .sticked{
+            width: fit-content;
+            position: sticky;
+            padding: 10px;
+            z-index: 1;
+            top: 0pc;
+            background-color: transparent;
+            right: 0;
+        }
+
         .list {
             flex-direction: row;
             justify-content: center;
