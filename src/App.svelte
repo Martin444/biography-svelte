@@ -3,12 +3,14 @@
   import Home from './lib/views/home.svelte';
   import { Router, Route } from 'svelte-routing';
 import OtherPage from './lib/views/other_page.svelte';
+import NextTime from './lib/views/next_time.svelte';
 </script>
 
 <main>
   <Router>
     <Route path='/' component="{OtherPage}"/>
     <Route path='/manuel' component="{Home}"/>
+    <Route path='/proximamente' component="{NextTime}"/>
     <Background></Background>
   </Router>
 </main>

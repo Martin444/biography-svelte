@@ -21,7 +21,7 @@
             height: 100%;
             border-radius: 25% 75% 79% 21% / 30% 21% 79% 70% ;
             background-color: #DBBB46;
-            z-index: 0;
+            z-index: -1;
         }
     }
 </style>

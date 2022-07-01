@@ -1,47 +1,50 @@
 <script>
     import { link } from 'svelte-routing';
     import ButtonPrimary from '../components/button_primary.svelte';
-    import ManuelitoImg from '../../assets/manuelito.jpg';
+    import ManuelitoImg from '../../assets/miguelito.jpg';
+    import SanMartincitoImg from '../../assets/sanmartin.jpg';
 
     let messageManuelito = `Hola joven patriota`;
 </script>
 
-<div class="container-manuelito">
-    <h1 class="title">BELGRANISIMO</h1>
-    <div class="bubble-container">
-        <div class="bubble b r hb">
-            <p class="messagito">
-                {messageManuelito}
-            </p>
+<div>
+    <div class="container-miguelito">
+        <h1 class="title">Proximas historias</h1>
+        <div class="bubble-container">
+            <div class="bubble b r hb">
+                <p class="messagito">
+                    Nos veremos pronto
+                </p>
+            </div>
         </div>
+        <img src={ManuelitoImg} alt="manuelito" class="miguel-img"/>
+        <p class="item-desc">
+            Conocerémos a Martín Miguel de Guemes
+        </p>
+    
     </div>
-    <img src={ManuelitoImg} alt="manuelito" class="manuel-img"/>
-    <p class="item-desc">
-        Demos un paseo por la historia.
-    </p>
-    <a href="/manuel" use:link>
-        <ButtonPrimary/>
-    </a>
+
+    <div class="container-miguelito">
+        <h1 class="title">Proximas historias</h1>
+        <div class="bubble-container">
+            <div class="bubble b r hb">
+                <p class="messagito">
+                    Nos veremos pronto
+                </p>
+            </div>
+        </div>
+        <img src={SanMartincitoImg} alt="manuelito" class="miguel-img"/>
+        <p class="item-desc">
+            y a Jose de San Martín
+        </p>
+    
+    </div>
 </div>
-<a href="/proximamente" use:link class="next-time">
-    <button >Proximamente</button>
-</a>
+
+
 
 <style>
-    .next-time{
-        position: absolute;
-        bottom: 0;
-        padding: 20px;
-        border: none;
-    }
-    .next-time button{
-        padding: 20px;
-        font-size: 20pt;
-        font-weight: bold;
-        color: #fff;
-        background-color: transparent;
-        border: none;
-    }
+
 
     .title {
         position: absolute;
@@ -76,7 +79,7 @@
     }
 
 
-    .container-manuelito {
+    .container-miguelito {
         background-color: white;
         border-radius: 10px;
         width: 100%;
@@ -84,11 +87,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        z-index: 3;
+        z-index: 9;
     }
 
-    .manuel-img {
-        width: 20vw;
+    .miguel-img {
+        width: 15vh;
         height: auto;
     }
 
@@ -111,7 +114,7 @@
         width: 20vw;
         height: 25%;
         left: 63%;
-        top: 11vh;
+        top: 15vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -124,7 +127,7 @@
 
     .bubble-container {
         position: absolute;
-        top: 42%;
+        top: 37%;
         left: 67%;
         transform: translate(-70%, -50%);
         width: fit-content;
@@ -146,8 +149,8 @@
             width: 10em;
         }
         .bubble-container {
-            top: 45%;  
-            left: 66%;
+            top: 35%;  
+            left: 72%;
         }
         
         .item-desc {
@@ -168,8 +171,8 @@
             width: 10em;
         }
         .bubble-container {
-            top: 47%;  
-            left: 70%;
+            top: 35%;  
+            left: 72%;
         }
     }
 
@@ -179,7 +182,7 @@
         }
 
         .bubble-container {
-            top: 49%;  
+            top: 39%;  
             left: 74vw;
         }
 
@@ -194,7 +197,7 @@
         text-align: center;
         font-size: 4vmin;
         margin: 0;
-        width: 30ch;
+        width: 40ch;
         animation: typing 2s steps(40), blink .5s infinite step-end alternate;
         overflow: hidden;
     }
