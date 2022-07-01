@@ -70,13 +70,13 @@
         flex-direction: row;
         align-items: start;
         margin: 0;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         padding: 0;
     }
 
     @media(max-width: 700px) {
 
-        .sticked{
+        .sticked {
             width: fit-content;
             position: sticky;
             padding: 10px;

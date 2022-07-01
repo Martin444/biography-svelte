@@ -7,7 +7,7 @@
 </script>
 
 <div class="container-manuelito">
-    <h1 class="title">BELGERANISIMO</h1>
+    <h1 class="title">BELGRANISIMO</h1>
     <div class="bubble-container">
         <div class="bubble b r hb">
                 <p class="messagito">
