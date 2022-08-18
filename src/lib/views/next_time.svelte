@@ -1,10 +1,7 @@
 <script>
-    import { link } from 'svelte-routing';
-    import ButtonPrimary from '../components/button_primary.svelte';
     import ManuelitoImg from '../../assets/miguelito.jpg';
     import SanMartincitoImg from '../../assets/sanmartin.jpg';
 
-    let messageManuelito = `Hola joven patriota`;
 </script>
 
 <div>

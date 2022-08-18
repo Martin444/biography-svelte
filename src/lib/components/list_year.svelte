@@ -1,6 +1,5 @@
 <script>
-    import {fade} from 'svelte/transition';
-    import { elasticOut } from 'svelte/easing';
+    import { link } from 'svelte-routing';
     import data from '../../assets/manuel.json';
     import Timeline from './timeline.svelte';
     import YearTile from './year_tile.svelte';
@@ -20,26 +19,31 @@
 
 </script>
 
-<div class="list"> 
-    <!-- TODO: Implementar una lista de años -->
-    {#if y > 300}
-    <ul class="sticked">
-        {#each data['data'] as moor (moor['id'])}
-            <YearTile year={moor['year']} on:onselect={handleSelect} select={yearIsSelect == moor['year']} ></YearTile>
-        {/each}
-    </ul>
-
-    {:else}
-    <ul transition:fade='{{ duration: 500, easing: elasticOut}}'>
-        {#each data['data'] as moor (moor['id'])}
-            <YearTile year={moor['year']} on:onselect={handleSelect} select={yearIsSelect == moor['year']} ></YearTile>
-        {/each}
-    </ul>
-    {/if}
-
-    <Timeline  yearSelected={yearIsSelect}/>
+<div>
+    <a href="/manuelito"  use:link>Mira la version para niños</a>
+    <div class="list"> 
+        <!-- TODO: Implementar una lista de años -->
+        {#if y > 300}
+        <ul class="sticked">
+            {#each data['data'] as moor (moor['id'])}
+                <YearTile year={moor['year']} on:onselect={handleSelect} select={yearIsSelect == moor['year']} ></YearTile>
+            {/each}
+        </ul>
+    
+        {:else}
+        <ul >
+            {#each data['data'] as moor (moor['id'])}
+                <YearTile year={moor['year']} on:onselect={handleSelect} select={yearIsSelect == moor['year']} ></YearTile>
+            {/each}
+        </ul>
+        {/if}
+    
+        <Timeline  yearSelected={yearIsSelect}/>
+    
+    </div>
 
 </div>
+
 
 <svelte:window bind:scrollY={y} />
 

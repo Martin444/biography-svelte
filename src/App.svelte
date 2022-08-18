@@ -4,6 +4,7 @@
   import { Router, Route } from 'svelte-routing';
 import OtherPage from './lib/views/other_page.svelte';
 import NextTime from './lib/views/next_time.svelte';
+import ChildHistory from './lib/views/child_history.svelte';
 </script>
 
 <main>
@@ -11,6 +12,7 @@ import NextTime from './lib/views/next_time.svelte';
     <Route path='/' component="{OtherPage}"/>
     <Route path='/manuel' component="{Home}"/>
     <Route path='/proximamente' component="{NextTime}"/>
+    <Route path='/manuelito' component="{ChildHistory}"/>
     <Background></Background>
   </Router>
 </main>

@@ -1,13 +1,12 @@
 <script>
 import ListYear from "../components/list_year.svelte";
-// import Timeline from "../components/timeline.svelte";
 import Aurora from '../../assets/cancionau.mp3'
 import AudioPlayer from "../components/audio_player.svelte";
 
 </script>
 
 <div class="container">
-    <h1 class="name">MANUEL BELGRANO</h1>
+    <h1 class="name" >MANUEL BELGRANO</h1>
     <span class="article">Hagamos un recorrido por la vida del prócer Argentino.</span>
     <AudioPlayer src={Aurora} />
     <ListYear/>
